@@ -1,3 +1,15 @@
+## 0.12.1 - 2026-10-06
+
+- Home ridisegnata con maggiore fedeltà al render approvato.
+- Hero Patrimonio totale con trend reale a 6 mesi.
+- Delta patrimonio vs mese precedente.
+- KPI Home premium con accenti pastello.
+- Card dedicate per prossimo addebito e settore principale.
+- Strumenti compatti in griglia 4×2.
+- Ridotto il rumore informativo della dashboard.
+- Dock inferiore più premium/flottante.
+- Nessuna modifica allo schema dati; schemaVersion resta 6.
+
 ## 0.12.0 - 2026-10-06
 
 - Restyling grafico completo di MONEY.
