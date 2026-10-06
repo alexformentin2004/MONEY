@@ -279,3 +279,84 @@ Major refinement release.
 
 ### Compatibilità
 I dati delle versioni precedenti vengono migrati automaticamente allo schema 3 all'apertura. I vecchi backup restano importabili tramite normalizeState().
+
+
+## AUTO-ready · v0.9.0
+
+MONEY è predisposta per lo scambio dati bidirezionale con il futuro modulo AUTO.
+
+### Categoria Auto
+La categoria predefinita Auto include:
+- Carburante / ricarica
+- Assicurazione
+- Bollo
+- Manutenzione ordinaria
+- Manutenzione straordinaria
+- Tagliando
+- Pneumatici
+- Revisione
+- Parcheggi
+- Pedaggi
+- Lavaggi
+- Accessori
+- Multe
+- Altro auto
+
+La vecchia categoria Trasporti resta separata per mezzi pubblici, taxi/NCC, noleggi e trasporti generici.
+
+### Veicoli
+MONEY può salvare riferimenti leggeri ai veicoli prima che AUTO esista:
+- vehicleId
+- nome/etichetta
+- targa opzionale
+- alimentazione
+- stato attivo/archiviato
+
+AUTO potrà in seguito importare o riconciliare questi riferimenti.
+
+### Vehicle Cost Event
+Una spesa collegata ad AUTO mantiene il normale movimento MONEY e aggiunge:
+
+integration:
+- eventId: identificatore stabile e univoco
+- sourceModule: money o auto
+- linkedModules: money, auto
+- entityType: vehicle_cost
+- vehicleId
+
+auto:
+- eventId
+- vehicleId
+- costType
+- fuelType
+- quantity
+- unit (L o kWh)
+- unitPrice
+- odometerKm
+- fullTank
+- vendor
+- note
+
+Questo consente a MONEY e AUTO di riferirsi allo stesso evento senza creare duplicati.
+
+### Bridge API
+AlexMoneyIntegration espone:
+- getVehicleCostEvents()
+- upsertVehicleCostEvent(event)
+
+getVehicleCostEvents() esporta gli eventi veicolo normalizzati.
+upsertVehicleCostEvent(event) inserisce o aggiorna un costo veicolo usando eventId come chiave di deduplicazione.
+
+### Esempio
+Rifornimento:
+- MONEY: 52,30 € spesi da Revolut
+- AUTO: 31,8 L benzina, km veicolo, prezzo/L, distributore
+- stesso eventId
+- stesso vehicleId
+
+### Export
+Backup JSON e CSV includono i riferimenti veicolo e i campi AUTO.
+Il report mensile include un riepilogo AUTO quando sono presenti eventi collegati.
+
+### Schema
+schemaVersion: 4
