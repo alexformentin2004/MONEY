@@ -524,3 +524,31 @@ Le altre sezioni restano raggiungibili dalla Home e dalla schermata Altro.
 ### Compatibilità
 Nessuna modifica allo schema dati: schemaVersion resta 6.
 La logica della v0.11.0 resta invariata; v0.12.0 è una release UI/UX.
+
+
+## MONEY v0.12.1 · Home Fidelity Upgrade
+
+Secondo passaggio UI dedicato alla fedeltà verso il render approvato.
+
+### Home
+- Eliminata la duplicazione visiva del titolo MONEY.
+- Periodo/mese trasformato in barra compatta.
+- Hero “Patrimonio totale” ridisegnata.
+- Andamento patrimonio a 6 mesi calcolato dai saldi reali dei conti.
+- Delta rispetto al mese precedente.
+- Area chart mint con punto finale evidenziato.
+- KPI Home trasformati in card premium con icone e accenti pastello.
+- “Prossimo addebito” come card dedicata.
+- “Settore principale del mese” come card dedicata con barra percentuale.
+- Griglia strumenti compatta 4×2.
+- Un solo insight sintetico in Home per ridurre il rumore.
+- Le funzioni secondarie sono raggiungibili da “Vedi tutti / Altro”.
+
+### Dock
+- Bottom navigation più compatta e flottante.
+- Bordo, radius e ombra più vicini al render.
+- Pulsante centrale + maggiormente integrato nel dock.
+
+### Compatibilità
+schemaVersion resta 6.
+Nessuna modifica al modello dati o alle funzioni finanziarie.
