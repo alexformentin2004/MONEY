@@ -408,3 +408,75 @@ Il bridge è progettato per AUTO, Trading, Projects e futuri moduli ALEX HUB.
 
 ### Esclusione intenzionale
 La v0.10.0 non introduce conti debito, carte di credito, prestiti o passività.
+
+
+## MONEY v0.11.0
+
+Release dedicata a personalizzazione, interoperabilità e solidità.
+
+### Obiettivi di risparmio collegati ai conti
+Gli obiettivi possono usare:
+- progresso manuale; oppure
+- saldo corrente di un conto collegato.
+
+Il collegamento non sposta denaro: usa il conto scelto come fonte del progresso.
+
+### Insight automatici
+MONEY genera spiegazioni sintetiche dai dati:
+- variazione spese rispetto al mese precedente;
+- tasso di risparmio;
+- categoria principale;
+- peso dei costi AUTO;
+- utilizzo dei limiti;
+- peso delle ricorrenze.
+
+Non è AI esterna: gli insight vengono calcolati localmente.
+
+### Import CSV guidato
+La schermata Esporta & Backup permette di importare CSV:
+- rilevamento automatico del delimitatore;
+- anteprima delle righe;
+- mappatura guidata delle colonne;
+- supporto numeri italiani con virgola;
+- riconoscimento conto/categoria quando possibile;
+- conto e tipo predefiniti;
+- deduplicazione tramite firma del movimento;
+- riepilogo righe importate, duplicate e non valide.
+
+I movimenti importati hanno origin=csv.
+
+### Archivio eventi HUB
+Nuova schermata che mostra record con eventId:
+- sourceModule;
+- linkedModules;
+- entityType;
+- status;
+- syncStatus;
+- eventId;
+- importo e data.
+
+Gli eventi non vengono duplicati: l’archivio visualizza gli stessi movimenti condivisi dal Financial Bridge.
+
+### Privacy mode
+Il pulsante Privacy nell’header nasconde importi e saldi nell’interfaccia con “•••• €”.
+Backup, CSV e report PDF mantengono i valori reali.
+
+### KPI Home personalizzabili
+L’utente può scegliere da 2 a 4 KPI tra:
+- patrimonio;
+- entrate;
+- spese;
+- risparmio;
+- tasso di risparmio;
+- limite residuo;
+- conti risparmio;
+- forecast 30 giorni;
+- costi AUTO.
+
+### Test automatici
+- npm test esegue tests/regression.test.mjs.
+- GitHub Actions esegue automaticamente la suite su push e pull request.
+- I test verificano sintassi, schema, bridge HUB/AUTO, privacy, import CSV, obiettivi collegati, forecast, chiusure, dashboard annuale e assenza della gestione debiti/carte richiesta come esclusione.
+
+### Schema
+schemaVersion: 6
