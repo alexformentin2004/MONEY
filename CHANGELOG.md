@@ -1,3 +1,16 @@
+## 0.11.0 - 2026-10-06
+
+- Obiettivi di risparmio collegabili ai conti.
+- Insight automatici mensili.
+- Import CSV guidato con anteprima, mapping e deduplicazione.
+- Archivio eventi HUB con eventId/sourceModule/syncStatus.
+- Privacy mode per nascondere importi e saldi.
+- KPI Home personalizzabili (2-4).
+- Nuova suite di test di regressione.
+- GitHub Action automatica per npm test.
+- Financial Bridge esteso con syncStatus.
+- schemaVersion 6.
+
 ## 0.10.0 - 2026-10-06
 
 - Contratto HUB finanziario generico.
