@@ -1,4 +1,4 @@
-const CACHE='alex.money.shell.v0.11.0';
+const CACHE='alex.money.shell.v0.12.0';
 const CORE=['./','./index.html','./manifest.webmanifest'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()));
