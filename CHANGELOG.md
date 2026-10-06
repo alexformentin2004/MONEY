@@ -1,3 +1,17 @@
+## 0.12.0 - 2026-10-06
+
+- Restyling grafico completo di MONEY.
+- Nuovo tema premium light fintech mint.
+- Card più marcate e ombre più visibili.
+- Header chiaro traslucido.
+- Hero card patrimonio/saldi ridisegnata.
+- Launcher e KPI riallineati al nuovo design system.
+- Liste, conti, Auto, Analisi, Ricorrenze, Export e Altro uniformati.
+- Form, modali, filtri, badge, tag e toast ridisegnati.
+- Bottom navigation aggiornata con FAB centrale.
+- Navigazione rapida: Home, Movimenti, Analisi, Risparmio.
+- Nessuna modifica allo schema dati; schemaVersion resta 6.
+
 ## 0.11.0 - 2026-10-06
 
 - Obiettivi di risparmio collegabili ai conti.
