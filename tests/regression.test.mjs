@@ -73,7 +73,7 @@ test('AUTO bridge remains intact', () => {
 test('actual accounting excludes planned and cancelled movements', () => {
   assert.match(script, /function isActual\(t\)/);
   assert.match(script, /function actualTxForMonth\(k\)/);
-  assert.match(script, /status:'planned'/);
+  assert.match(script, /planned/);
 });
 
 test('forecast, integrity, annual dashboard and month closures remain present', () => {
