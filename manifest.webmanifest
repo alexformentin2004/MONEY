@@ -1,1 +1,12 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+{
+  "id": "./",
+  "name": "MONEY · ALEX HUB",
+  "short_name": "MONEY",
+  "description": "Finanze personali offline con budget, risparmio e ricorrenze",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#10233d",
+  "lang": "it-IT"
+}
