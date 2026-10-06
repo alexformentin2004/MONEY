@@ -12,8 +12,8 @@ test('application JavaScript is syntactically valid', () => {
   assert.doesNotThrow(() => new Function(script));
 });
 
-test('v0.13.0 schema and core storage contract are present', () => {
-  assert.match(script, /APP_VERSION='0\.13\.0',SCHEMA_VERSION=6/);
+test('v0.14.0 schema and core storage contract are present', () => {
+  assert.match(script, /APP_VERSION='0\.14\.0',SCHEMA_VERSION=6/);
   assert.match(script, /KEY='alex\.money\.state'/);
   assert.match(script, /monthlyClosures/);
   assert.match(script, /vehicleRefs/);
@@ -83,8 +83,8 @@ test('forecast, integrity, annual dashboard and month closures remain present', 
   assert.match(script, /function closeMonth\(k\)/);
 });
 
-test('service worker cache is aligned to v0.13.0', () => {
-  assert.match(sw, /alex\.money\.shell\.v0\.13\.0/);
+test('service worker cache is aligned to v0.14.0', () => {
+  assert.match(sw, /alex\.money\.shell\.v0\.14\.0/);
 });
 
 test('credit/debt feature remains intentionally absent', () => {
@@ -119,4 +119,18 @@ test('Home master v0.13 components are present', () => {
   assert.match(script, /function homeBalanceChart\(k\)/);
   assert.match(script, /function renderMasterKpis\(k\)/);
   assert.match(script, /home-master-view/);
+});
+
+
+test('full UI expansion is present across module screens', () => {
+  assert.match(html, /module-master-view/);
+  assert.match(html, /module-head/);
+  assert.match(html, /module-hero/);
+  assert.match(html, /premium-list/);
+  assert.match(html, /settings-group/);
+  assert.match(html, /transaction-summary/);
+  assert.match(script, /Saldo complessivo/);
+  assert.match(script, /Costi auto del mese/);
+  assert.match(script, /I tuoi obiettivi/);
+  assert.match(script, /Stato backup/);
 });
