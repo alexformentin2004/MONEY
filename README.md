@@ -233,3 +233,13 @@ Questo progetto non richiede la presenza di TODAY, INSIGHTS o altre app ALEX HUB
 - Filtri movimenti per conto.
 - Budget chiarito come limite volontario di spesa mensile; 0 disattiva il limite.
 - Migrazione automatica dei vecchi conti allo schemaVersion 2.
+
+
+## Interfaccia a schermate · v0.4.0
+
+- Dashboard Home compatta con patrimonio, entrate, spese, risparmio, limite residuo, anomalie e prossimo addebito.
+- Griglia launcher nella Home per aprire Conti, Movimenti, Ricorrenze, Limite spesa, Risparmio, Analisi, Wishlist e Altro.
+- Schermate dedicate separate per Conti, Budget/Limite spesa, Obiettivi, Wishlist e Analisi.
+- Navigazione inferiore semplificata: Home, Movimenti, Ricorrenze, Conti, Menu.
+- Analisi separata con spese per settore, spese per conto e trend 6 mesi.
+- UI pensata per evitare una singola pagina lunga da scorrere.
