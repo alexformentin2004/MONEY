@@ -243,3 +243,14 @@ Questo progetto non richiede la presenza di TODAY, INSIGHTS o altre app ALEX HUB
 - Navigazione inferiore semplificata: Home, Movimenti, Ricorrenze, Conti, Menu.
 - Analisi separata con spese per settore, spese per conto e trend 6 mesi.
 - UI pensata per evitare una singola pagina lunga da scorrere.
+
+
+## Export, backup e reset · v0.5.0
+
+- Nuova schermata Esporta & Backup.
+- Backup JSON completo e reimportabile con riepilogo dei dati esportati.
+- CSV movimenti con scelta tra mese selezionato e tutto lo storico; formato compatibile con Excel/Numbers e campi conto/trasferimento.
+- Report mensile dedicato con KPI, conti, spese per settore e movimenti, stampabile o salvabile in PDF.
+- Import JSON con validazione e conferma prima della sostituzione dei dati.
+- Zona pericolosa separata con reset completo protetto dalla digitazione esplicita di RESET.
+- Il reset cancella i dati inseriti localmente e ripristina lo stato iniziale dell'app.
