@@ -552,3 +552,37 @@ Secondo passaggio UI dedicato alla fedeltà verso il render approvato.
 ### Compatibilità
 schemaVersion resta 6.
 Nessuna modifica al modello dati o alle funzioni finanziarie.
+
+
+## MONEY v0.13.0 · Home Master
+
+Hard UI redesign della Home con obiettivo di fedeltà al render approvato.
+
+### Nuova composizione
+- Home ricostruita quasi da zero.
+- Layout pensato come dashboard nativa invece che pagina web a card.
+- Intro compatta “Le tue finanze” con selettore mese.
+- Hero patrimonio molto più dominante e stratificata.
+- Grafico patrimonio a 6 mesi con curva morbida e gradienti.
+- KPI disposti in composizione asimmetrica.
+- Card focus dedicate per prossimo addebito e settore principale.
+- Toolbox in superficie unica con 8 scorciatoie.
+- Insight sintetico integrato.
+- Dock inferiore flottante e più vicino al mockup.
+
+### Iconografia
+- Introdotta libreria inline SVG.
+- Le icone della Home e delle azioni principali non dipendono più da glifi Unicode.
+- Stile outline coerente e scalabile.
+
+### Visual language
+- Background più atmosferico con gradienti radiali.
+- Superfici semi-traslucide.
+- Ombre più profonde ma morbide.
+- Palette mint/pastello più sofisticata.
+- Tipografia numerica più marcata.
+- Radius e spacing più vicini al render.
+
+### Compatibilità
+schemaVersion resta 6.
+Nessun cambiamento ai dati o alla logica finanziaria.
