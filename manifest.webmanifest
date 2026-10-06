@@ -1,16 +1,1 @@
-{
-  "id": "./",
-  "name": "MONEY · ALEX HUB",
-  "short_name": "MONEY",
-  "description": "Finanze personali offline con budget, risparmio e ricorrenze",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "background_color": "#f4f7fa",
-  "theme_color": "#0d1d31",
-  "lang": "it-IT",
-  "icons": [
-    {"src":"./assets/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
-    {"src":"./assets/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
-  ]
-}
+The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
