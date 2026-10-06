@@ -12,7 +12,7 @@ test('application JavaScript is syntactically valid', () => {
   assert.doesNotThrow(() => new Function(script));
 });
 
-test('v0.11.0 schema and core storage contract are present', () => {
+test('v0.12.0 schema and core storage contract are present', () => {
   assert.match(script, /APP_VERSION='0\.11\.0',SCHEMA_VERSION=6/);
   assert.match(script, /KEY='alex\.money\.state'/);
   assert.match(script, /monthlyClosures/);
@@ -83,11 +83,19 @@ test('forecast, integrity, annual dashboard and month closures remain present', 
   assert.match(script, /function closeMonth\(k\)/);
 });
 
-test('service worker cache is aligned to v0.11.0', () => {
+test('service worker cache is aligned to v0.12.0', () => {
   assert.match(sw, /alex\.money\.shell\.v0\.11\.0/);
 });
 
 test('credit/debt feature remains intentionally absent', () => {
   assert.doesNotMatch(html, /Carta di credito/i);
   assert.doesNotMatch(html, /Prestito/i);
+});
+
+
+test('premium mint UI theme is present', () => {
+  assert.match(html, /--mint:#0aa37f/);
+  assert.match(html, /--shadow:0 12px 34px/);
+  assert.match(html, /data-view="analytics"/);
+  assert.match(html, /data-view="goals"/);
 });
