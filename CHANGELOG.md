@@ -1,3 +1,13 @@
+## 0.3.0 - 2026-10-06
+
+- Nuovo modello Conti & portafogli con tipo, saldo iniziale, stato attivo/archiviato e saldo calcolato.
+- Selezione conto obbligatoria per entrate e spese.
+- Trasferimenti conto → conto senza impatto su spesa/entrata mensile.
+- Analisi mensili per settore/categoria e per conto.
+- Filtro movimenti per conto.
+- Budget rinominato e spiegato come limite spesa mensile.
+- schemaVersion 2 con migrazione automatica.
+
 # MONEY Changelog
 
 ## 0.1.0 — 2026-10-06
