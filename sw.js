@@ -1,4 +1,4 @@
-const CACHE='alex.money.shell.v0.1.0';
+const CACHE='alex.money.shell.v0.1.1';
 const ASSETS=[
   './','./index.html','./manifest.webmanifest','./css/styles.css',
   './assets/icon-192.png','./assets/icon-512.png','./assets/apple-touch-icon.png',

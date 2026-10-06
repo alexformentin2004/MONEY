@@ -10,3 +10,8 @@
 - Contratti TODAY/INSIGHTS/HUB/EVENTS/QUICK ACTIONS.
 - IndexedDB con namespace e fallback localStorage; cache PWA offline.
 - Test per date, idempotenza ricorrenze, giroconti, budget, anomalie, validazione backup.
+
+## 0.1.1 — 2026-10-06
+- Pacchetto di distribuzione preparato con contenuti direttamente alla radice dello ZIP.
+- Aggiunta diagnostica di avvio: se `js/ui/app.js` o altre risorse non vengono caricate, MONEY mostra un messaggio utile invece di restare su “Caricamento dati locali…”.
+- Nessuna modifica allo schema dati (`schemaVersion` resta 1).

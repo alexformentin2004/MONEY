@@ -23,6 +23,9 @@ MONEY è il modulo **money** della futura suite ALEX HUB. App web statica, senza
 
 ## 2. Installazione su iPhone — zero euro
 
+### Importante per GitHub
+Nel repository **non caricare lo ZIP come unico file** e non lasciare tutti i file dentro una sottocartella `MONEY_v0.1.1/`. La root del repository deve contenere direttamente `index.html`, `manifest.webmanifest`, `sw.js`, `css/`, `js/`, `assets/` e gli altri file del progetto. Se manca `js/` la pagina resta senza logica applicativa; dalla v0.1.1 viene mostrato un errore diagnostico.
+
 Non basta aprire `index.html` nell'app File: per il Service Worker e la PWA serve un'origine **HTTPS** (oppure `localhost` per test sul computer).
 
 1. Sul PC Windows, estrai lo ZIP e verifica che `index.html`, `manifest.webmanifest`, `sw.js`, `css/`, `js/`, `assets/` siano nella stessa cartella di progetto.
@@ -199,7 +202,7 @@ JavaScript di due PWA installate su **origini diverse** non può leggere diretta
 
 ## 10. Piano delle prossime milestone
 
-- **v0.1.0 (questo ZIP):** struttura e prototipo completo delle sezioni principali; storage locale, ricorrenze, dashboard, contratti HUB, backup e test.
+- **v0.1.1 (questo ZIP):** struttura e prototipo completo delle sezioni principali; storage locale, ricorrenze, dashboard, contratti HUB, backup e test.
 - **v0.2.0:** test reali su iPhone, correzioni UX Safari, modifica della data delle occorrenze, import CSV guidato opzionale e migliore gestione multi-tab.
 - **v0.3.0:** riconciliazione delle registrazioni ricorrenti con addebiti effettivi, statistiche avanzate e PDF diretto opzionale senza dipendenze a pagamento.
 - **v1.0.0:** dopo test sul dispositivo e verifica completa dei casi limite.

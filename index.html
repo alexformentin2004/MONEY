@@ -32,6 +32,18 @@
   <div id="modal-layer" class="modal-layer" hidden></div>
   <div id="toast" role="status" aria-live="polite"></div>
   <div id="print-report"></div>
-  <script type="module" src="./js/ui/app.js"></script>
+  <script>
+    window.__moneyBootError = function(message) {
+      const view = document.getElementById('view');
+      if (!view || !view.querySelector('.loading')) return;
+      view.innerHTML = `<section class="card"><h2>MONEY non riesce ad avviarsi</h2><p>${message}</p><p><strong>Controlla il repository:</strong> nella stessa root di <code>index.html</code> devono esserci <code>manifest.webmanifest</code>, <code>sw.js</code> e le cartelle <code>css/</code>, <code>js/</code>, <code>assets/</code>.</p><p>Se usi GitHub Pages, pubblica la root del repository e poi ricarica la pagina.</p></section>`;
+    };
+    window.setTimeout(() => {
+      if (!document.documentElement.dataset.moneyReady) {
+        window.__moneyBootError('Il caricamento dei file JavaScript non è terminato. È probabile che uno o più file/cartelle non siano stati caricati nel repository oppure che i percorsi pubblicati siano errati.');
+      }
+    }, 6000);
+  </script>
+  <script id="money-app" type="module" src="./js/ui/app.js" onerror="window.__moneyBootError('Impossibile caricare js/ui/app.js. Verifica che la cartella js/ sia presente nel repository e pubblicata da GitHub Pages.')"></script>
 </body>
 </html>
