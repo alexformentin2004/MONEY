@@ -1,3 +1,17 @@
+## 0.14.0 - 2026-10-06
+
+- Esteso il design Home Master a tutta MONEY.
+- Nuova module master shell per tutte le sezioni interne.
+- Movimenti ridisegnati.
+- Conti ridisegnati.
+- Auto ridisegnata.
+- Risparmio / Obiettivi ridisegnati.
+- Export & Backup ridisegnato.
+- Altro / Settings ridisegnato.
+- Ricorrenze, Categorie, Budget, Analisi, Forecast, Mesi, Annuale, Integrità, HUB Events e Wishlist uniformati.
+- Form, modali, filtri, input e bottom dock riallineati al nuovo design system.
+- Nessuna modifica allo schema dati; schemaVersion resta 6.
+
 ## 0.13.0 - 2026-10-06
 
 - Hard redesign della Home.
