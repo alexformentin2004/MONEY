@@ -360,3 +360,51 @@ Il report mensile include un riepilogo AUTO quando sono presenti eventi collegat
 
 ### Schema
 schemaVersion: 4
+
+
+## MONEY v0.10.0
+
+Release di maturazione del modulo MONEY.
+
+### Novità principali
+- Contratto HUB finanziario generico per futuri moduli oltre ad AUTO.
+- getFinancialEvents(), upsertFinancialEvent() e getIntegrationContract().
+- Deduplicazione degli eventi esterni tramite eventId.
+- Stati movimento: confirmed, planned, cancelled.
+- Origine movimento: manual, recurrence, hub, auto, trading, projects.
+- I movimenti planned entrano nel forecast ma non nei totali effettivi.
+- Merchant/esercente separato dalle note.
+- Tag liberi sui movimenti.
+- Cash-flow forecast a 30, 60 e 90 giorni.
+- Chiusura mensile tramite snapshot aggiornabile senza bloccare il mese.
+- Dashboard annuale con entrate, spese, risparmio, media mensile, mese più costoso, categorie e costi AUTO.
+- Controllo integrità dati per duplicati eventId, conti mancanti, trasferimenti incompleti, categorie e veicoli incoerenti.
+- Tracciamento ultimo backup e promemoria dopo 30 giorni.
+- Backup JSON aggiornato con monthlyClosures.
+- CSV aggiornato con merchant, tag, stato e origine.
+- Report mensile basato solo sui movimenti effettivi.
+- schemaVersion 5.
+
+### Financial Bridge
+Ogni evento finanziario condivisibile può usare:
+- eventId
+- sourceModule
+- linkedModules
+- entityType
+- type
+- amount
+- currency
+- date
+- status
+- origin
+- accountId / fromAccountId / toAccountId
+- category / subcategory
+- merchant
+- tags
+- note
+- payload opzionale
+
+Il bridge è progettato per AUTO, Trading, Projects e futuri moduli ALEX HUB.
+
+### Esclusione intenzionale
+La v0.10.0 non introduce conti debito, carte di credito, prestiti o passività.
