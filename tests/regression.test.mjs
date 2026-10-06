@@ -101,12 +101,12 @@ test('premium mint UI theme is present', () => {
 });
 
 
-test('high fidelity Home components are present', () => {
-  assert.match(html, /home-hero-chart/);
+test('Home fidelity layer is aligned to the v0.13 master architecture', () => {
+  assert.match(html, /hm-chart/);
   assert.match(script, /function homeBalanceChart\(k\)/);
-  assert.match(script, /function renderPremiumHomeKpis\(k\)/);
-  assert.match(html, /home-tools/);
-  assert.match(html, /home-feature-card/);
+  assert.match(script, /function renderMasterKpis\(k\)/);
+  assert.match(html, /hm-tools/);
+  assert.match(html, /hm-focus-card/);
 });
 
 
