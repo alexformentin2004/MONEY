@@ -1,3 +1,12 @@
+## 0.5.0 - 2026-10-06
+
+- Aggiunta schermata Esporta & Backup.
+- Backup completo JSON migliorato.
+- CSV selezionabile per mese o storico completo.
+- Report mensile dedicato pronto per stampa/PDF.
+- Import backup con validazione e conferma.
+- Reset completo con doppia protezione tramite parola RESET.
+
 ## 0.4.0 - 2026-10-06
 
 - Dashboard iniziale compatta.
