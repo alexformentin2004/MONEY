@@ -1,3 +1,20 @@
+## 0.10.0 - 2026-10-06
+
+- Contratto HUB finanziario generico.
+- API getFinancialEvents(), upsertFinancialEvent(), getIntegrationContract().
+- Stati confirmed/planned/cancelled e origine dei movimenti.
+- Forecast cash-flow 30/60/90 giorni.
+- Chiusura mensile con snapshot aggiornabile.
+- Merchant/esercente separato dalla nota.
+- Tag liberi.
+- Ultimo backup e promemoria backup.
+- Controllo integrità dati.
+- Dashboard annuale.
+- Backup JSON e CSV aggiornati.
+- Report mensile esclusivamente sui movimenti effettivi.
+- schemaVersion 5.
+- Non aggiunta gestione carte di credito/debiti/passività, come richiesto.
+
 ## 0.9.0 - 2026-10-06
 
 - MONEY resa AUTO-ready.
