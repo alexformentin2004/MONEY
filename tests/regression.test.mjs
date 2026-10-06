@@ -13,7 +13,7 @@ test('application JavaScript is syntactically valid', () => {
 });
 
 test('v0.12.0 schema and core storage contract are present', () => {
-  assert.match(script, /APP_VERSION='0\.11\.0',SCHEMA_VERSION=6/);
+  assert.match(script, /APP_VERSION='0\.12\.0',SCHEMA_VERSION=6/);
   assert.match(script, /KEY='alex\.money\.state'/);
   assert.match(script, /monthlyClosures/);
   assert.match(script, /vehicleRefs/);
@@ -84,7 +84,7 @@ test('forecast, integrity, annual dashboard and month closures remain present', 
 });
 
 test('service worker cache is aligned to v0.12.0', () => {
-  assert.match(sw, /alex\.money\.shell\.v0\.11\.0/);
+  assert.match(sw, /alex\.money\.shell\.v0\.12\.0/);
 });
 
 test('credit/debt feature remains intentionally absent', () => {
