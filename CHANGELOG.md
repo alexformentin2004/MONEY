@@ -1,3 +1,11 @@
+## 0.4.0 - 2026-10-06
+
+- Dashboard iniziale compatta.
+- Launcher a pulsanti per accedere alle funzioni principali.
+- Nuove schermate dedicate: Conti, Limite spesa, Risparmio, Analisi e Wishlist.
+- Navigazione inferiore semplificata.
+- Ridotto lo scrolling nella Home e separati i contenuti analitici.
+
 ## 0.3.0 - 2026-10-06
 
 - Nuovo modello Conti & portafogli con tipo, saldo iniziale, stato attivo/archiviato e saldo calcolato.
