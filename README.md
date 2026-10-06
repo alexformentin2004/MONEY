@@ -480,3 +480,47 @@ L’utente può scegliere da 2 a 4 KPI tra:
 
 ### Schema
 schemaVersion: 6
+
+
+## MONEY v0.12.0 · Premium UI Refresh
+
+Release grafica basata sul tema approvato per MONEY.
+
+### Design system
+- Tema chiaro premium fintech.
+- Sfondo warm white / soft gray.
+- Accent principale mint/verde.
+- Card bianche più marcate con bordi delicati e ombre visibili.
+- Palette secondaria pastello: rosso soft, blu, lilla, beige/gold.
+- Tipografia più netta e gerarchica.
+- Iconografia circolare e coerente.
+- Radius e spacing unificati.
+
+### Componenti aggiornati
+- Header globale chiaro e traslucido.
+- Hero card patrimonio/saldi con gradiente mint.
+- KPI card e stat card.
+- Card liste e righe movimenti.
+- Launcher strumenti.
+- Account card e vehicle card.
+- Forecast, insight, annuale, mesi e HUB events.
+- Export e backup.
+- Form, input, select, textarea.
+- Modali e toast.
+- Badge, tag, filtri e pill.
+- Grafici/barre con palette mint.
+- Bottom navigation con FAB centrale.
+
+### Navigazione inferiore
+La bottom bar è stata semplificata visivamente:
+- Home
+- Movimenti
+- pulsante centrale +
+- Analisi
+- Risparmio
+
+Le altre sezioni restano raggiungibili dalla Home e dalla schermata Altro.
+
+### Compatibilità
+Nessuna modifica allo schema dati: schemaVersion resta 6.
+La logica della v0.11.0 resta invariata; v0.12.0 è una release UI/UX.
