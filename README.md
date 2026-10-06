@@ -221,3 +221,15 @@ JavaScript di due PWA installate su **origini diverse** non può leggere diretta
 ---
 
 Questo progetto non richiede la presenza di TODAY, INSIGHTS o altre app ALEX HUB, e non legge dati da altre app.
+
+
+## Conti & portafogli · v0.3.0
+
+- Conti configurabili con tipo: spese, risparmio, contanti o altro.
+- Saldo iniziale e saldo corrente calcolato dai movimenti.
+- Ogni entrata/spesa richiede il conto di accredito/addebito.
+- Trasferimenti tra conti con origine e destinazione, esclusi dai totali di spesa/entrata mensile.
+- Dashboard con saldi dei conti, spese mensili per conto e spese per categoria/settore.
+- Filtri movimenti per conto.
+- Budget chiarito come limite volontario di spesa mensile; 0 disattiva il limite.
+- Migrazione automatica dei vecchi conti allo schemaVersion 2.
