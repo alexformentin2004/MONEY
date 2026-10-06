@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1d31">
+  <meta name="description" content="MONEY: finanze personali offline, conti, budget, abbonamenti e risparmio. Modulo ALEX HUB.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="MONEY">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./assets/icon-192.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>MONEY · ALEX HUB</title>
+</head>
+<body>
+  <div id="app-shell">
+    <header class="topbar">
+      <div class="identity"><div class="logo">M<span>•</span></div><div><div class="eyebrow">ALEX HUB / FINANZE</div><strong>MONEY</strong></div></div>
+      <div class="top-actions"><span id="offline-indicator" class="offline-indicator" hidden>Offline</span><button id="quick-add" class="top-add" aria-label="Aggiungi spesa">＋</button></div>
+    </header>
+    <main id="view" tabindex="-1"><section class="loading"><div class="spinner"></div><p>Caricamento dati locali…</p></section></main>
+    <nav class="bottom-nav" aria-label="Navigazione principale">
+      <button data-nav="home" class="active"><span class="nav-symbol">⌂</span><small>Home</small></button>
+      <button data-nav="transactions"><span class="nav-symbol">⇄</span><small>Movimenti</small></button>
+      <button data-nav="recurrences"><span class="nav-symbol">↻</span><small>Ricorrenze</small></button>
+      <button data-nav="plans"><span class="nav-symbol">◎</span><small>Piani</small></button>
+      <button data-nav="more"><span class="nav-symbol">☷</span><small>Altro</small></button>
+    </nav>
+  </div>
+  <div id="modal-layer" class="modal-layer" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="print-report"></div>
+  <script type="module" src="./js/ui/app.js"></script>
+</body>
+</html>
