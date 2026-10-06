@@ -586,3 +586,40 @@ Hard UI redesign della Home con obiettivo di fedeltà al render approvato.
 ### Compatibilità
 schemaVersion resta 6.
 Nessun cambiamento ai dati o alla logica finanziaria.
+
+
+## MONEY v0.14.0 · Full UI Expansion
+
+Il design system Home Master introdotto in v0.13 viene esteso all’intera app.
+
+### Shell globale
+- Header di sezione ridisegnati.
+- Background e superfici coerenti con la Home master.
+- Card, ombre, radius e spacing uniformati.
+- Bottom dock master anche nelle sezioni interne.
+- Form, filtri, input, modali e pulsanti riallineati.
+
+### Schermate core ridisegnate
+- Movimenti: riepilogo mensile, filtri premium, lista più pulita.
+- Conti: hero saldo complessivo e account card premium.
+- Auto: hero costi mensili, vehicle card e breakdown costi.
+- Risparmio: goal card con progresso e collegamento ai conti.
+- Export & Backup: utility card dedicate.
+- Altro: impostazioni organizzate in gruppi premium.
+
+### Sezioni uniformate tramite Module Master Shell
+- Ricorrenze
+- Categorie
+- Limiti / Budget
+- Wishlist
+- Analisi
+- Forecast
+- Mesi
+- Annuale
+- Integrità dati
+- Eventi HUB
+- Dettaglio conto
+
+### Compatibilità
+schemaVersion resta 6.
+La release modifica solo UI/UX e non cambia il modello dati.
