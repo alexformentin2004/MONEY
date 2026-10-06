@@ -12,8 +12,8 @@ test('application JavaScript is syntactically valid', () => {
   assert.doesNotThrow(() => new Function(script));
 });
 
-test('v0.12.1 schema and core storage contract are present', () => {
-  assert.match(script, /APP_VERSION='0\.12\.1',SCHEMA_VERSION=6/);
+test('v0.13.0 schema and core storage contract are present', () => {
+  assert.match(script, /APP_VERSION='0\.13\.0',SCHEMA_VERSION=6/);
   assert.match(script, /KEY='alex\.money\.state'/);
   assert.match(script, /monthlyClosures/);
   assert.match(script, /vehicleRefs/);
@@ -83,8 +83,8 @@ test('forecast, integrity, annual dashboard and month closures remain present', 
   assert.match(script, /function closeMonth\(k\)/);
 });
 
-test('service worker cache is aligned to v0.12.1', () => {
-  assert.match(sw, /alex\.money\.shell\.v0\.12\.1/);
+test('service worker cache is aligned to v0.13.0', () => {
+  assert.match(sw, /alex\.money\.shell\.v0\.13\.0/);
 });
 
 test('credit/debt feature remains intentionally absent', () => {
@@ -107,4 +107,16 @@ test('high fidelity Home components are present', () => {
   assert.match(script, /function renderPremiumHomeKpis\(k\)/);
   assert.match(html, /home-tools/);
   assert.match(html, /home-feature-card/);
+});
+
+
+test('Home master v0.13 components are present', () => {
+  assert.match(html, /home-master/);
+  assert.match(html, /hm-hero/);
+  assert.match(html, /hm-kpi-grid/);
+  assert.match(html, /hm-tools-shell/);
+  assert.match(script, /var uiIcon=function\(name\)/);
+  assert.match(script, /function homeBalanceChart\(k\)/);
+  assert.match(script, /function renderMasterKpis\(k\)/);
+  assert.match(script, /home-master-view/);
 });
