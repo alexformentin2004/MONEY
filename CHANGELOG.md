@@ -1,3 +1,17 @@
+## 0.8.0 - 2026-10-06
+
+- Categorie/sottocategorie gestibili e archiviabili.
+- Nuovo schema dati 3 con migrazione automatica.
+- Limiti di spesa per categoria.
+- Storico mensile.
+- Scheda dettaglio conto e conto preferito.
+- Ricorrenze con previsioni 7/30/60 giorni ed equivalente mensile.
+- Analisi avanzata 3/6/12 mesi, top spese e salute finanziaria.
+- Inserimento rapido, suggerimenti dallo storico e duplicazione movimento.
+- Ricerca globale.
+- Report PDF/stampa professionale ampliato.
+- Backup/import aggiornati ai nuovi dati.
+
 ## 0.5.0 - 2026-10-06
 
 - Aggiunta schermata Esporta & Backup.
