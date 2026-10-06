@@ -1,3 +1,16 @@
+## 0.13.0 - 2026-10-06
+
+- Hard redesign della Home.
+- Nuova composizione Home master.
+- Hero patrimonio più avanzata.
+- Grafico patrimonio curvo con gradienti.
+- KPI asimmetrici e più editoriali.
+- Card focus per addebiti e settore principale.
+- Toolbox premium unificata.
+- Libreria di icone SVG inline.
+- Background, superfici, ombre e dock ridisegnati.
+- Nessuna modifica allo schema dati; schemaVersion resta 6.
+
 ## 0.12.1 - 2026-10-06
 
 - Home ridisegnata con maggiore fedeltà al render approvato.
