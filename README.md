@@ -254,3 +254,28 @@ Questo progetto non richiede la presenza di TODAY, INSIGHTS o altre app ALEX HUB
 - Import JSON con validazione e conferma prima della sostituzione dei dati.
 - Zona pericolosa separata con reset completo protetto dalla digitazione esplicita di RESET.
 - Il reset cancella i dati inseriti localmente e ripristina lo stato iniziale dell'app.
+
+
+## MONEY v0.8.0
+
+Major refinement release.
+
+### Nuove funzionalità
+- Categorie e sottocategorie personalizzabili, rinominabili e archiviabili.
+- Migrazione automatica delle vecchie categorie stringa al nuovo modello strutturato.
+- Limiti mensili per singola categoria oltre al limite totale.
+- Storico mensile con card apribili e confronto con il mese precedente.
+- Schede conto dedicate con saldo, entrate, spese, trasferimenti e trend a 6 mesi.
+- Conto preferito e ordinamento conti per preferito, nome, saldo o tipo.
+- Ricorrenze con equivalente mensile, costo annualizzato e calendario previsionale a 60 giorni.
+- Analisi avanzata: confronto mese precedente, medie 3/6/12 mesi, top spese, crescita categorie, quota percentuale per settore.
+- Indicatori di salute finanziaria basati su tasso di risparmio, spese ricorrenti, peso delle ricorrenze e uso del limite mensile.
+- Inserimento rapido basato sugli ultimi movimenti e suggerimenti appresi dalla descrizione.
+- Duplicazione movimento.
+- Ricerca globale su movimenti, conti e ricorrenze.
+- Report mensile PDF/stampa evoluto con KPI, trend, categorie, conti, top spese, prossime ricorrenze e dettaglio movimenti.
+- Backup JSON aggiornato con categoryBudgets e categorie strutturate.
+- schemaVersion 3.
+
+### Compatibilità
+I dati delle versioni precedenti vengono migrati automaticamente allo schema 3 all'apertura. I vecchi backup restano importabili tramite normalizeState().
