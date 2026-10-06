@@ -1,3 +1,18 @@
+## 0.9.0 - 2026-10-06
+
+- MONEY resa AUTO-ready.
+- Nuova categoria Auto con costi veicolo strutturati.
+- Separata la categoria Trasporti dai costi auto.
+- Aggiunta gestione riferimenti veicolo.
+- I movimenti possono essere collegati ad AUTO con eventId e vehicleId.
+- Campi specifici per carburante/ricarica, litri/kWh, prezzo unitario, chilometraggio, pieno e fornitore.
+- Nuova schermata Auto con costi mensili, veicoli e breakdown per tipo.
+- Backup JSON e CSV estesi ai dati AUTO.
+- Report mensile con sezione Auto.
+- Bridge AlexMoneyIntegration con getVehicleCostEvents() e upsertVehicleCostEvent().
+- Deduplicazione futura MONEY ↔ AUTO tramite eventId.
+- schemaVersion 4.
+
 ## 0.8.0 - 2026-10-06
 
 - Categorie/sottocategorie gestibili e archiviabili.
